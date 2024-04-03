@@ -1,8 +1,10 @@
+import Link from "next/link";
+
 export default function HomeScreen() {
   return (
     <div>
       <h1>Pagina Inicial</h1>
-      <a href="/sobre">Sobre</a>
+      <Link href="/sobre">Sobre</Link>
     </div>
-  )
+  );
 }
