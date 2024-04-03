@@ -1,0 +1,21 @@
+name: "CI (Integração continua): Primeira Action"
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  exemplo:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Hello World
+      run: echo "Hello World"
+
+    - name: List files
+      run: ls -la
