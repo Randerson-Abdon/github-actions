@@ -1,4 +1,4 @@
-nome: "CI (Integração Contínua): Main Workflow"
+name: "CI (Integração Contínua): Main Workflow"
 
 on:
   pull_request:
